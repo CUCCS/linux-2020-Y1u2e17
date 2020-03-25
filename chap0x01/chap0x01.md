@@ -123,9 +123,9 @@
         - *Solution：将PasswordAuthentication改为yes*
       - ```put C:/Users/xudon/Desktop/Linux截图/ubuntu-server-autoinstall.seed（2） ~/cd/preseed```，将文件传输到preseed目录下
         - *Error： 因为没有root权限，只能保存在/home/xudongyue/目录下*
-        - *Solution：在Xshell中```mv /home/xudongyue/ubuntu-server-autoinstall.seed（2） ~/cd/preseed```，将seed文件转移到preseed目录下*
+        - *Solution：在Xshell中```mv /home/xudongyue/ubuntu-server-autoinstall.seed（2） ~/cd/preseed/```，将seed文件转移到preseed目录下*
 
-      ![传输成功seed](images/41.jpg)
+      ![传输成功seed](images/git1.png)
 
     - 通过lrzsz (Xshell) 传输   
       - 转到/home/xudongyue/preseed/目录下，将ubuntu-server-autoinstall.seed拖到Xshell中，实现文件传输
