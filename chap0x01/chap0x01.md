@@ -59,22 +59,19 @@
         ```cd ~/.ssh```   转到该目录下
         ```touch authorized_keys```   创建authorized_keys文档
 
-    - 修改配置文件/etc/ssh/sshd_config
-      - 设置开启PublicKey认证登录
-        - ```PubkeyAuthentication   yes```
-          ```AuthorizedKeysFile   ~/.ssh/authorized_keys```
-
   - 生成密钥（公钥与私钥）
     - 打开Xshell，点击工具->新建用户密钥生成向导 生成公钥和私钥。
  
   - 放置公钥(Public Key)到~/.ssh/authorized_key文件中
-    - 复制公钥将其粘贴到~/.ssh/authorized_key中
-    
-      ![公钥](images/1.jpg)
-
     - 也可以将公钥文件保存在本地，把.pub文件拖到Xshell上实现文件传输
 
       ![.pub公钥文件传输](images/37.jpg)
+
+  - 修改配置文件/etc/ssh/sshd_config
+      - 设置开启PublicKey认证登录
+        - ```PubkeyAuthentication   yes```
+          ```AuthorizedKeysFile   ~/.ssh/authorized_keys  ~/.ssh/key3.pub```，如果key3.pub不添加在这里，将会导致ssh免密登陆失败
+      - ```service ssh restart```
 
   - 配置ssh客户端使用密钥登录
     - 在Virtualbox中将虚拟机重启，不用密码登陆
@@ -126,7 +123,7 @@
         - *Solution：将PasswordAuthentication改为yes*
       - ```put C:/Users/xudon/Desktop/Linux截图/ubuntu-server-autoinstall.seed（2） ~/cd/preseed```，将文件传输到preseed目录下
         - *Error： 因为没有root权限，只能保存在/home/xudongyue/目录下*
-        - *Solution：在Xshell中```mv /home/xudongyue/ubuntu-server-autoinstall.seed（1） ~/cd/preseed```，将seed文件转移到preseed目录下*
+        - *Solution：在Xshell中```mv /home/xudongyue/ubuntu-server-autoinstall.seed（2） ~/cd/preseed```，将seed文件转移到preseed目录下*
 
       ![传输成功seed](images/41.jpg)
 
