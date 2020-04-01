@@ -6,6 +6,7 @@ a:link {color:#FF8C00;}    /* 未被访问的链接 */
 </head>
 
 <body>
+
 # 实验二 From GUI to CLI
 ## 一、实验目的
 - 确保本地已经完成asciinema auth，并在asciinema成功关联了本地账号和在线账号
