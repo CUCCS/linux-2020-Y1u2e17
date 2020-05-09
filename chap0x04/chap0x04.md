@@ -26,7 +26,7 @@
 - Ubuntu 18.04.4 Server 64bit
 
 ## 三、实验过程及结果
-- 结果在[travis](https://travis-ci.com/github/Y1u2e17/shell0504/builds/164762625)查看
+- 结果在[travis](https://travis-ci.com/github/Y1u2e17/linux-2020-Y1u2e17/builds/164857925)查看
 
 ## 参考资料
 - [CUCCS/linux-2019-Lyc-heng](https://github.com/CUCCS/linux-2019-Lyc-heng/blob/chap0x04/chap0x04/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.md
