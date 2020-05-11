@@ -1,0 +1,36 @@
+language: bash
+
+before_install:
+                - sudo apt-get update
+                - sudo apt-get install gsfonts
+                - sudo apt-get install p7zip-full
+                - 7z x web_log.tsv.7z
+script:
+                - bash task1.sh -h
+                - bash task1.sh -f task1_images -q 1M 1280 1280 80
+                - bash task1.sh -f task1_images/1.jpg -r 50%x50%
+                - bash task1.sh -f task1_images -w Xudongyue
+                - ls task1_images/
+                - bash task1.sh -f task1_images -a -p pre
+                - ls task1_images/
+                - bash task1.sh -f task1_images -a -s suf
+                - ls task1_images/
+                - bash task1.sh -f task1_images -j
+                - ls task1_images/
+                - bash task1.sh -f task1_images/pre2suf.jpg -r 1080x1080 -a -s end
+                - identify task1_images/pre2sufend.jpg
+                - bash task2.sh worldcupplayerinfo.tsv -h
+                - bash task2.sh worldcupplayerinfo.tsv -a
+                - bash task2.sh worldcupplayerinfo.tsv -p
+                - bash task2.sh worldcupplayerinfo.tsv -n        
+                - bash task3.sh web_log.tsv -h
+                - bash task3.sh web_log.tsv -to
+                - bash task3.sh web_log.tsv -ti
+                - bash task3.sh web_log.tsv -tu
+                - bash task3.sh web_log.tsv -re
+                - bash task3.sh web_log.tsv -rt
+                - bash task3.sh web_log.tsv -sh /images/launchmedium.gif
+notifications:
+                email:
+                        on_success: never
+
