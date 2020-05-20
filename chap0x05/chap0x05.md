@@ -13,7 +13,7 @@
   - ```vn.sec.cuc.edu.cn```
   - port:80
 
-![结构图](images/示例图.png)
+![结构图](images/结构图.png)
 
 ## 二、实验过程
 
