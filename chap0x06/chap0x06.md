@@ -52,9 +52,9 @@
     vsftpd:192.168.56.105
     ```
   - 添加允许访问的IP之前，客户端访问
-    ![ftp配置](images/ftp04.png)
+  - ![ftp配置](images/ftp04.png)
   - 添加之后，客户端访问
-    ![ftp配置](images/ftp05.png)
+  - ![ftp配置](images/ftp05.png)
 - 参考
   - [How To Set Up vsftpd for Anonymous Downloads on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-anonymous-downloads-on-ubuntu-16-04)
   - [How To Set Up vsftpd for a User's Directory on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-16-04)
@@ -119,7 +119,7 @@
 - ![dhcp](images/dhcp03.png)
 ##### client端
 - 修改```/etc/network/interfaces```文件
-  ![dhcp](images/dhcp05.png)
+- ![dhcp](images/dhcp05.png)
 - ```sudo netplan apply```
 - 重启网络
 - ![dhcp](images/dhcp04.png)
@@ -161,13 +161,13 @@ forwarders {
 ##### client端
 - ```sudo apt install resolvconf```
 - ```sudo vi /etc/resolvconf/resolv.conf.d/head```
-  ![dns](images/dns03.png)
+- ![dns](images/dns03.png)
 - ```sudo resolvconf -u```
 ##### 测试
 - **client**
-  ![dns](images/dns06.png)
-  ![dns](images/dns04.png)
-  ![dns](images/dns05.png)
+  - ![dns](images/dns06.png)
+  - ![dns](images/dns04.png)
+  - ![dns](images/dns05.png)
 - 参考
   - [How To Configure BIND as a Private Network DNS Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-14-04#prerequisites)
 
